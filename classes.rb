@@ -1,10 +1,15 @@
 Player
   lives
   score
+  random happy quotes
+  random sad quotes
 
-Turn
+
+User_Inputs
+  turn
+  prompts
+  scoreboard
+  screen messages
   
-
 Question
-  operators
-  number between 1 to 20
+  number generator between 1 to 20
