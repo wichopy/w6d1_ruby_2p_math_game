@@ -5,7 +5,7 @@ require './referee.rb'
 P1 = Player.new(3,0)
 P2 = Player.new(3,0)
 ref = Referee.new()
-Numbers = Numbers.new()
+gm = GameMath.new()
 
 while (P1.lives > 0 && P2.lives > 0)
   if ref.p1 
@@ -16,7 +16,7 @@ while (P1.lives > 0 && P2.lives > 0)
     puts "P1: #{P1.score}    ||  P2: #{P2.score}  "
     puts "------------------------"
     puts "P1's turn."
-    puts "What is #{Numbers.n1} + #{Numbers.n2} ?"
+    puts "What is #{gm.n1} + #{gm.n2} ?"
     print ">"
     #Wait for user input.
     user_input = gets
@@ -28,13 +28,13 @@ while (P1.lives > 0 && P2.lives > 0)
     puts "P1: #{P1.score}    ||  P2: #{P2.score}  "
     puts "------------------------"
     puts "P2's turn."
-    puts "What is #{Numbers.n1} + #{Numbers.n2} ?"
+    puts "What is #{gm.n1} + #{gm.n2} ?"
     print ">"
     #Wait for user input.
     user_input = gets
   end
 
-  if Numbers.checksum(user_input.chomp.to_i)
+  if gm.checksum(user_input.chomp.to_i)
     if ref.p1
       P1.score = P1.score + 1
     else
@@ -48,7 +48,7 @@ while (P1.lives > 0 && P2.lives > 0)
     end
   end
 
-  Numbers.new_rand_pair
+  gm.new_rand_pair
   ref.switch_players()
 end
 

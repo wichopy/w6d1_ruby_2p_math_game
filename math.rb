@@ -1,4 +1,4 @@
-class Numbers
+class GameMath
   attr_accessor :n1, :n2
   def  initialize ()
     @n1 = rand(0...20)
@@ -17,35 +17,3 @@ class Numbers
   end
 end
 
-
-#Testing
-
-# number = Numbers.new()
-
-# print number.n1.to_s + "  "
-# puts number.n2
-
-# puts number.checksum(30)
-
-# puts number.new_rand_pair
-
-# print number.n1.to_s + "  "
-# puts number.n2
-
-# puts number.new_rand_pair
-# print number.n1.to_s + "  "
-# puts number.n2
-# puts number.new_rand_pair
-
-# print number.n1.to_s + "  "
-# puts number.n2
-# puts number.new_rand_pair
-
-# print number.n1.to_s + "  "
-# puts number.n2
-# puts number.new_rand_pair
-
-# print number.n1.to_s + "  "
-# puts number.n2
-
-# puts number.checksum(number.n1+number.n2)

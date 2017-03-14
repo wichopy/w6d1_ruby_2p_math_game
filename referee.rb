@@ -18,17 +18,3 @@ class Referee
     end
   end
 end
-
-#Test code
-
-# P1 = true
-# P2 = false
-# ref = Referee.new()
-
-# puts ref.p1
-# puts ref.p2
-
-# ref.switch_players
-
-# puts ref.p1
-# puts ref.p2
